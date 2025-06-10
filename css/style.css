@@ -1,15 +1,179 @@
-header{
-    background-color: pink;
-    color: azure;
+/* General Reset and Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
+
+/* Header / Navigation Bar */
+header {
+  background-color: #2e2e2e;
+  padding: 20px 0;
 }
+
+header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+nav ul {
+  display:flex;
+  justify-content:center;
+}
+
+nav ul li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color:whitesmoke;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ffbc00;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+section {
+  background-color: #ffbc00;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+section form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+section input[type="text"] {
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+section button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+section button:hover {
+  background-color: #444;
+}
+
+/* Categories Section */
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+section ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+section ul li {
+  margin: 0 15px;
+}
+
+section ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+section ul li a:hover {
+  background-color: #ffbc00;
+  color: #fff;
+}
+
+/* Featured Restaurants Section */
+main {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+  font-size: 1.8rem;
+}
+
+article p {
+  font-size: 1.1rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+article:nth-child(even) {
+  background-color: #fafafa;
+}
+
+article:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
