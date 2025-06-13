@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
@@ -15,7 +16,10 @@ body {
 /* Header / Navigation Bar */
 header {
   background-color: #2e2e2e;
-  padding: 20px 0;
+  padding: 1rem 2rem;
+  position: sticky; 
+  top: 0; 
+  z-index: 1000;
 }
 
 header h1 {
